@@ -1,2 +1,3 @@
 git config --global user.name "Leo25788"
 git config --global user.email "huy@mail.com"
+update fix data
