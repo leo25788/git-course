@@ -1,7 +1,3 @@
 git config --global user.name "Leo25788"
 git config --global user.email "huy@mail.com"
-<<<<<<< HEAD
 update fix data
-=======
-huy test
->>>>>>> 303462d41cb899b6569577319a3cbc1608f18b12
