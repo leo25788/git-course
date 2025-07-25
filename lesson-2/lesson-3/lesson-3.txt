@@ -1,0 +1,43 @@
+git commit --amend
+Mục đích:
+Sửa commit gần nhất — có thể để:
+
+Thay đổi nội dung commit (thêm/bớt file).
+
+Chỉnh sửa message của commit.
+
+git commit --amend
+
+
+git commit --amend -m "<message>"
+Mục đích:
+Sửa commit gần nhất, nhưng bạn đặt lại commit message
+
+
+git restore --staged <file>
+Mục đích:
+Gỡ một file ra khỏi staging area, đưa nó về lại working directory.
+
+git reset HEAD~1
+Mục đích:
+Quay lại commit trước đó (undo commit gần nhất), đồng thời đưa nội dung commit bị bỏ về staging area.
+--------------------------------------------------
+Bài tập 2 :
+a. Tạo 3 file: file1, file2, file3
+b. Chạy lệnh: git init -> Khởi tạo repo 
+c. Chạy lệnh: git commit -m”init project” -> chưa có gì được add 
+d. Chạy lệnh: git add file1 -> Add file1 vào staging
+e. Chạy lệnh: git commit -m”add file” -> commit file1, staging rỗng
+f. Chạy lệnh: git add . -> Add file2,file 3 vào staging
+g. Chạy lệnh: git restore --staged file2 -> Gỡ file2 khỏi staging đưa xún Working directory
+h. Chạy lệnh: git commit -m”add all files” -> tạo commmit với file file3
+i. Chạy lệnh: git reset HEAD~1 -> xoá commit gần nhất đưa file3 về staging
+--------------------
+Bài tập 3: 
+a. Chạy lệnh git init --> Khởi tạo repo 
+b. Tạo file file1.txt, file2.txt, oops/file3.txt. -> tạo file
+c. Thêm file .gitignore, thêm vào 2 dòng:
+i. file1.txt -> file bị ignore hoàn toàn.
+ii. oops/ -ignore thư mục  toàn bộ mọi file, folder bên trong đều bị bỏ qua.
+d. Chạy lệnh: git add . -> Add file2 vào staging
+e. Chạy lệnh: git commit -m"init project" -> commit file2 
