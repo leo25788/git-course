@@ -52,14 +52,14 @@ const monthlyData = [
 ];
 
 function calculateTotalRevenue(data) {
-    let totalRevenue = 0; 
+    let totalRevenue = 0;
 
-    
+
     for (let i = 0; i < data.length; i++) {
-        totalRevenue += data[i].total; 
+        totalRevenue += data[i].total;
     }
 
-    return totalRevenue; 
+    return totalRevenue;
 }
 
 const overallRevenue = calculateTotalRevenue(monthlyData);
