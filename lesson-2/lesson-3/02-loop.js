@@ -36,7 +36,31 @@ for (let i = 1; i < 10; i++) {
 }
 //Tính tổng doanh thu của 12 tháng trong năm dựa trên mảng doanh thu đã cho và
 //in ra tổng doanh thu. Biết cấu trúc object của mảng doanh thu như sau:
-const doanhThu = {
-    month: 2,
-    toatal: 100,
+const monthlyData = [
+    { month: "January", total: 1200 },
+    { month: "February", total: 1500 },
+    { month: "March", total: 1350 },
+    { month: "April", total: 2000 },
+    { month: "May", total: 8889 },
+    { month: "June", total: 999 },
+    { month: "July", total: 1 },
+    { month: "August", total: 2 },
+    { month: "September", total: 3 },
+    { month: "October", total: 2050 },
+    { month: "November", total: 2400 },
+    { month: "December", total: 2500 },
+];
+
+function calculateTotalRevenue(data) {
+    let totalRevenue = 0; 
+
+    
+    for (let i = 0; i < data.length; i++) {
+        totalRevenue += data[i].total; 
+    }
+
+    return totalRevenue; 
 }
+
+const overallRevenue = calculateTotalRevenue(monthlyData);
+console.log(`Tổng doanh thu của năm là: $${overallRevenue}`); 
